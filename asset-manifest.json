@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/todo-neon/static/css/main.491f2025.css",
+    "main.js": "/todo-neon/static/js/main.3e8e157d.js",
+    "static/js/787.319676fc.chunk.js": "/todo-neon/static/js/787.319676fc.chunk.js",
+    "index.html": "/todo-neon/index.html",
+    "main.491f2025.css.map": "/todo-neon/static/css/main.491f2025.css.map",
+    "main.3e8e157d.js.map": "/todo-neon/static/js/main.3e8e157d.js.map",
+    "787.319676fc.chunk.js.map": "/todo-neon/static/js/787.319676fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.491f2025.css",
+    "static/js/main.3e8e157d.js"
+  ]
+}
