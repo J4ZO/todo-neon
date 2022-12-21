@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.TodoItem {
+    margin-top: 3rem;
+    padding: 0 20px;
+    box-shadow: 0px 0px 5px white, inset 0px 0px 7px white, 0px 0px 10px white, 0px 0px 15px white;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.TodoItem:hover {
+    padding: 0.4rem 1rem;
+}
+
+
+.TodoItem-p {
+    transition: 0.5s;
+}
+
+.TodoItem-p::before {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+
+.show-true {
+    box-shadow: 0px 0px 5px #00D100, inset 0px 0px 7px #00D100, 0px 0px 15px #00D100, 0px 0px 17px #00D100;
+
+    background-color: #161616;
+    height: 3rem;
+    align-content: center;
+    transition: 1s;
+}
+
+.show-true:hover {
+    padding: 0 20px;
+    height: 4rem;
+}
+
+.TodoItem .container+.TodoItem-p--complete {
+    text-decoration: line-through;
+    text-shadow: 0px 0px 5px #00D100, 0px 0px 7px #00D100, 0px 0px 15px #00D100, 0px 0px 17px #00D100;
+}
+
+/* Hide the default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background-color: #ccc;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 0px 17px #c7bbb8;
+    justify-content: center;
+}
+
+/* .checkmark:hover {
+    box-shadow: 0px 0px 17px #00D100;
+} */
+
+.check {
+    display: none;
+    margin: 0;
+    transition: 0.5s;
+}
+
+/* When the checkbox is checked, add a green background */
+.TodoItem .TodoItem-check--complete {
+    background-color: #00D100;
+    box-shadow: 0px 0px 17px #00D100;
+}
+
+.TodoItem-check--complete .check {
+    display: block;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid rgb(233, 222, 222);
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+}

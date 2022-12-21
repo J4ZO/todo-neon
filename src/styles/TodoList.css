@@ -1,0 +1,40 @@
+/* .TodoList {
+    max-width: 500px;
+    margin: auto;
+} */
+
+.TodoList ul {
+    list-style: none;
+    padding: 0px;
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.TodoList ul li {
+    display: grid;
+    grid-template-columns: 20px auto auto;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+
+
+.TodoList ul li .TodoItem-p {
+    justify-self: start;
+    margin-left: 3rem;
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 5px #00F4F8, 0px 0px 10px #00F4F8, 0px 0px 15px #00F4F8, 0px 0px 20px #00F4F8;
+}
+
+.Icon-delete {
+    justify-self: end;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 5px red, 0px 0px 7px red, 0px 0px 15px red, 0px 0px 17px red;
+    transition: 0.5s;
+}
+
+.Icon-delete:hover {
+    cursor: pointer;
+    font-size: 2rem;
+}

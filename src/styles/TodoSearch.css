@@ -1,0 +1,49 @@
+/* Search desing */
+.input-group {
+    display: flex;
+    position: relative;
+    max-width: 600px;
+    margin-top: 2rem;
+}
+
+.input {
+    min-width: 250px;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    /* color: #f5f5f5; */
+    color: white;
+    text-shadow: 0px 0px 5px white, 0px 0px 10px white;
+    box-shadow: 0px 0px 10px #00D7DB, inset 0px 0px 5px #00D7DB;
+}
+
+.user-label {
+    position: absolute;
+    left: 15px;
+    color: #e8e8e8;
+    font-size: 1.3rem;
+    pointer-events: none;
+    transform: translateY(1rem);
+    text-shadow: 0px 0px 5px white, 0px 0px 10px white;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus,
+.input:hover {
+    outline: none;
+    border: 2px solid white;
+    box-shadow: 0px 0px 20px #33FCFF, inset 0px 0px 7px #33FCFF;
+}
+
+.input:focus~label {
+    transform: translateY(-50%) scale(1);
+    font-size: 1.5rem;
+    /* background-color: #000000; */
+    padding: 0.2em 2em 1.4em 0.2em;
+    text-shadow: 0px 0px 5px #00D7DB, 0px 0px 10px #00D7DB, 0px 0px 15px #00D7DB, 0px 0px 20px #00D7DB;
+    color: white;
+
+}

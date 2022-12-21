@@ -1,0 +1,32 @@
+.TodoCounter {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    animation: pulsate 2s infinite alternate cubic-bezier(0.82, 0.14, 0.3, 1.02);
+}
+
+@keyframes pulsate {
+
+    100% {
+        text-shadow:
+            0 0 2px #fff,
+            0 0 8px #fff,
+            0 0 20px #00D7DB,
+            0 0 30px #00D7DB;
+    }
+
+    0% {
+        text-shadow:
+            0 0 10px #fff,
+            0 0 30px #00D7DB,
+            0 0 40px #00D7DB;
+    }
+}
+
+@media screen and (min-width: 480px) {
+
+    .TodoCounter {
+        font-size: 4rem;
+
+    }
+}

@@ -1,0 +1,152 @@
+form {
+    padding: 33px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    margin: 3rem 30px;
+    min-width: 200px;
+    width: 500px;
+    height: 600px;
+    background-image: linear-gradient(90deg, hsla(148, 100%, 50%, 1) 6%, hsla(160, 100%, 47%, 1) 24%,
+            hsla(169, 100%, 45%, 1) 40%, hsla(177, 100%, 43%, 1) 65%, hsla(0, 0%, 100%, 1) 100%);
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.card2 {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    border-radius: 16px;
+    transition: all .2s;
+}
+
+.card2:hover,
+.card2:focus {
+    transform: scale(0.99);
+    border-radius: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.containerNew {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: white;
+    text-shadow: 0px 0px 5px #00D7DB, 0px 0px 10px #00D7DB, 0px 0px 15px #00D7DB, 0px 0px 20px #00D7DB;
+    margin-bottom: 26px;
+}
+
+textarea {
+    min-width: 220px;
+    margin: 2rem 0;
+    background-color: #1a1a1a;
+    border: 2px solid white;
+    border-radius: 2px;
+    color: white;
+    text-shadow: 0px 0px 5px white, 0px 0px 10px white;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 12px;
+    width: calc(100% - 25px);
+    box-shadow: 0px 0px 10px #00D7DB, inset 0px 0px 5px #00D7DB;
+    transition: 0.5s;
+}
+
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.76);
+    font-weight: 400;
+}
+
+textarea:focus,
+textarea:hover {
+    outline-color: #61DAFA;
+    box-shadow: 0px 0px 20px #33FCFF, inset 0px 0px 7px #33FCFF;
+}
+
+.TodoForm-buttonContainer {
+    min-width: 220px;
+    margin-top: 15px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+
+.TodoForm-button {
+
+    --glow-color: white;
+    --glow-spread-color: white;
+    --enhanced-glow-color: rgba(255, 255, 255, 0.76);
+    --btn-color: #1a1a1a;
+    margin-top: 30px;
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    width: 100%;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 20px var(--glow-color),
+        0 0 15px var(--glow-spread-color),
+        inset 0 0 10px var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    transition: all 0.3s;
+    cursor: pointer;
+    max-width: 180px;
+}
+
+.TodoForm-button:hover {
+    font-size: 16px;
+}
+
+.TodoForm-button--cancel:hover {
+    background: transparent;
+    color: white;
+    text-shadow: 0 0 .5em red, 0 0 .5em red;
+    box-shadow: 0 0 1em red,
+        0 0 4em red,
+        inset 0 0 .75em red;
+}
+
+.TodoForm-button--add:hover {
+    background: transparent;
+    color: white;
+    text-shadow: 0 0 .5em #00D100, 0 0 .5em #00D100;
+    box-shadow: 0 0 1em #00D100,
+        0 0 4em #00D100,
+        inset 0 0 .75em #00D100;
+}
+
+
+@media (min-width: 480px) {
+    .card {
+        height: 750px;
+
+    }
+
+    .containerNew {
+        font-size: 2.5rem;
+    }
+
+    textarea {
+        font-size: 1.6rem;
+    }
+
+    .TodoForm-buttonContainer {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 55px;
+    }
+}
