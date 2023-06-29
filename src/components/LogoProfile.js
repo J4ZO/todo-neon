@@ -8,14 +8,14 @@ function LogoProfile() {
             {/* <div className="box">
 
                 <div className="content">
-                    <a href='https://www.linkedin.com/in/jaider-zapata-686470208/' className='link-image'>
+                    <a href='https://www.linkedin.com/in/jaider-zapata-53ba89263/' className='link-image'>
                         <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png?w=360" alt='linkedin-Jazo' className='linkedin-image image' />
                     </a>
                 </div>
             </div > */}
 
             <div className='circle'>
-                <a href='https://www.linkedin.com/in/jaider-zapata-686470208/' className='link-image'>
+                <a href='https://www.linkedin.com/in/jaider-zapata-53ba89263/' className='link-image'>
                     <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png?w=360" alt='linkedin-Jazo' className='linkedin-image image ' />
                 </a>
             </div>
@@ -28,7 +28,7 @@ function LogoProfile() {
                 <span></span>
                 <div className='content'>
                 </div>
-                <a href='https://www.linkedin.com/in/jaider-zapata-686470208/'>
+                <a href='https://www.linkedin.com/in/jaider-zapata-53ba89263/'>
                     <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png?w=360" alt='linkedin-Jazo' className='linkedin-image image' />
                 </a>
             </div>
